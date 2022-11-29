@@ -5,7 +5,7 @@ export const  SidebarData = [
     {
         title:"Inicio",
         icon: <AiOutlineHome/>,
-        link: "/home"
+        link: "/"
     },
     {
         title:"Produtos",

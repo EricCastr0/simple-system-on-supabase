@@ -7,33 +7,15 @@ import Home from './components/pages/Home/index'
 import Products from './components/pages/Products/index'
 
 function App() {
-
-  const [produtos, setProdutos]= useState([])
-  console.log(produtos);
-
-  useEffect(() => {
-    buscaProdutos()
-  }, [])
-
-  async function buscaProdutos(){
-    const {data} = await supabase
-        .from('Products')
-        .select('*')
-        setProdutos(data)
-
-}
-
-
   return (
       <Router>
-        <Routes>
-          <Route path='/home' element={<Home/>}/>
-          <Route path='/produtos' element={<Products/>}/>            
-        </Routes>
-        <div>
-          <div className='App'>
-            <Sidebar/>
-          </div>
+        <div className='App'>
+          <Sidebar>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/produtos' element={<Products/>}/>            
+          </Routes>
+          </Sidebar>
         </div>
       </Router>
 
