@@ -50,6 +50,52 @@ body {
 .content {
   width: 100%;
   padding: 20px;
+  color: #fff;
+}
+
+.fun {
+  width: 6em;
+
+}
+
+.edit {
+  width: 5px;
+  height: 5px;
+  padding: 0 10px;
+  font-size: 19px;
+
+}
+
+.btnNew {
+  margin: 10px;
+  margin-inline: auto;
+}
+
+.btnEdit {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10%;
+  font-size: medium;
+  padding: 7px;
+  padding-inline: 10px;
+  margin-left: 5px;
+
+}
+
+.btnDelete {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10%;
+  font-size: medium;
+  padding: 7px;
+  margin-left: 5px;
+  padding-inline: 10px;
+
+}
+
+.tabela {
+  width: 90%;
+  margin: 40px;
 }
 
 .icon {
