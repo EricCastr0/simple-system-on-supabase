@@ -4,6 +4,7 @@ import './styles.css';
 import { AiOutlineEdit, AiOutlineDelete} from "react-icons/ai";
 import { Button } from 'antd';
 import Modal from "react-modal";
+import Form from './textForm';
 
 Modal.setAppElement("#root");
 
@@ -22,11 +23,11 @@ function index() {
     content: {
       top: '50%',
       left: '50%',
-      right: 'auto',
+      right: '60%',
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-      padding: '200px'
+      padding: '20px'
     }
   }
 
@@ -56,12 +57,13 @@ function index() {
         onRequestClose={closeModal}
         style={customStyles}
         >
-        <div className='formProd'>
-          <h1>form</h1>
+        <div className='divForm'>
+          <h2>Cadastro de Produto</h2>
+          <Form label="Nome do Produto" placeholder="Digite o nome do produto"/>
+          <Form label="Preço" />
+          <Form label="Estoque Inicial"/>
           <Button type='primary' danger  onClick={closeModal}>Cancelar</Button>
-          <form action="">
-            <input/>
-          </form>
+          
         </div>
       </Modal>
           <tr>

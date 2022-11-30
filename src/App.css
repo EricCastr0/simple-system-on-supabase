@@ -93,6 +93,37 @@ body {
 
 }
 
+.divForm {
+  padding: 10px;
+
+}
+
+.divForm h2 {
+  padding: auto;
+  margin-top: 0;
+}
+
+.campo-texto {
+  margin: 20px 0;
+}
+
+.campo-texto label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  }
+
+.campo-texto input {
+  background-color: rgb(245, 255, 245);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
 .tabela {
   width: 90%;
   margin: 40px;
